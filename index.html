@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tevin Hamilton</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="app.js"></script>
+    <script src="app.js" defer></script>
     <script src="https:///kit.fontawesome.com/c8e4d183c2.js" crossorigin="4"></script>
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
@@ -38,14 +38,14 @@
                 link__hover-effect--black
                 ">Project</a>
                 </li>
-                <li class="nav__link" onclick="toggleModal()">
+                <li class="nav__link" onclick="toggleModal(), toggleDisplay()">
                     <a href="#" class="
                 nav__link--anchor
                 link__hover-effect
                 link__hover-effect--black
                 ">Contact</a>
                 </li>
-                <li class="nav__link click" onclick="toggleContrast()">
+                <li class="nav__link click" onclick="toggleContrast(), toggleQuote()">
                     <a href="#" class="
                 nav__link--anchor
                 link__hover-effect
@@ -156,6 +156,77 @@
 
     </section>
 
+    <div class="container">
+        <div class="row">
+            <div class="techStack__container">
+                <h2 class="stack__title">
+                    Here Are My <span class="blue">Stacks</span>
+                </h2>
+        
+                <div class="techStack__list">
+                    <div class="techStack">
+                        <figure class="techStack__img--wrapper">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        </figure>
+                        <span class="tech__name">HTML</span>
+                    </div>
+        
+                    <div class="techStack">
+                        <figure class="techStack__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="">
+                        </figure>
+                        <span class="tech__name">CSS</span>
+                    </div>
+        
+                    <div class="techStack">
+                        <figure class="techStack__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="">
+                        </figure>
+                        <span class="tech__name">Javascript</span>
+                    </div>
+        
+                    <div class="techStack">
+                        <figure class="techStack__img--wrapper">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="">
+                        </figure>
+                        <span class="tech__name">REACTS</span>
+                    </div>
+        
+                    <div class="techStack">
+                        <figure class="techStack__img--wrapper">
+                            <img class="newImages" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="">
+                        </figure>
+                        <span class="tech__name">VSCode</span>
+                    </div>
+        
+                    <div class="techStack">
+                        <figure class="techStack__img--wrapper">
+                            <img class="newImages" src="https://cdn.freebiesupply.com/logos/large/2x/git-icon-logo-png-transparent.png" alt="">
+                        </figure>
+                        <span class="tech__name">Git</span>
+                    </div>
+        
+        
+                    
+                </div>
+        
+            </div>
+        
+        
+        </div>
+    </div>
+<div class="quoteBox">
+    <section >
+        <div class="containers">
+            <div id="quote-container">
+                <p id="quote-text">Any fool can write code that a computer can understand. Good programmers write code that humans can understand.</p>
+                <button id="quote-button">New Quote</button>
+            </div>
+</section>
+</div>
+
+    
+
     
 
     <section id="projects">
@@ -165,49 +236,20 @@
                     Here Are Some Of My <span class="blue">Projects</span>
                 </h1>
                 <ul class="project__list">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img class="modal__language--img" src="./assets/ecomerce app.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project-description--title">
-                                    E-commerce App
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                    Html, CSS, Javascript
-                                </h4>
-                                <p class="project__description--para">
-                                    Proficiently designed and developed an eCommerce library book website,
-                                    seamlessly combining HTML, CSS, and JavaScript to create an intuitive user
-                                    interface and interactive browsing experience.                                    
-                                </p>
-                                <div class="project__description--links">
-                                    <a href="https://github.com/htevin/E-Commerce-Website" target="_blank" class="project__description--link">
-                                        <i class="fa fa-github"></i>
-                                    </a>
-                                    <a href="./Adavanced-E-commerce-App-Frontend-Javascript-main/index.html" target="_blank" class="project__description--link">
-                                        <i class="fas fa-link"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </li>
 
                     <li class="project">
                         <div class="project__wrapper">
-                            <img class="modal__language--img" src="./assets/superhero.png" class="project__img" alt="">
+                            <img class="modal__language--img" src="./assets/nike-website.png" class="project__img" alt="">
                             <div class="project__wrapper--bg"></div>
                             <div class="project__description">
                                 <h3 class="project-description--title">
-                                    SuperHero Generator
+                                    Nike Storefront Website
                                 </h3>
                                 <h4 class="project__description--sub-title">
-                                    Html, CSS, Javascript
+                                    REACTS, Html, CSS & Javascript
                                 </h4>
                                 <p class="project__description--para">
-                                    I developed a superhero generator using HTML, CSS, and JavaScript, which dynamically produces random superhero images and their associated statistics. 
-                                    Through HTML, I structured the webpage, while I used CSS to enhance its visual presentation. Leveraging JavaScript, I implemented the core functionality, enabling
-                                    the generation of diverse superhero characters with real-time stat updates.
+                                    I developed a Nike website using React, HTML, CSS, and JavaScript. This site boasts powerful search and filtering capabilities, ensuring a seamless shopping experience. With lightning-fast response times, the dynamic search feature allows you to effortlessly find the perfect Nike products.
                                 </p>
                                 <div class="project__description--links">
                                     <a href="https://github.com/htevin/Superhero-Api-Frontend" target="_blank" class="project__description--link">
@@ -220,6 +262,36 @@
                             </div>
                         </div>
                     </li>
+
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img class="modal__language--img" src="./assets/ecomerce app.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project-description--title">
+                                    E-commerce Web App
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, Javascript & React
+                                </h4>
+                                <p class="project__description--para">
+                                    Proficiently designed and developed an eCommerce library book website,
+                                    seamlessly combining HTML, CSS, JavaScript & React to create an intuitive user
+                                    interface and interactive browsing experience.                                    
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/htevin/library-react-pro" target="_blank" class="project__description--link">
+                                        <i class="fa fa-github"></i>
+                                    </a>
+                                    <a href="./Adavanced-E-commerce-App-Frontend-Javascript-main/index.html" target="_blank" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                   
 
                     <li class="project">
                         <div class="project__wrapper">
@@ -284,42 +356,7 @@
         </div>
     </section>
 
-    <section id="work">
-        <div class="container">
-            <div class="row">
-                <h1 class="section__title">
-                   My Work <span class="blue">Experience</span>
-                </h1>
-                <ul class="project__list">
-                    <li class="project">
-                        <div class="project__wrapper">
-                            <img class="modal__language--img" src="./assets/nwi.png" class="project__img" alt="">
-                            <div class="project__wrapper--bg"></div>
-                            <div class="project__description">
-                                <h3 class="project-description--title">
-                                    MWI-Pumps 
-                                </h3>
-                                <h4 class="project__description--sub-title">
-                                   Html, Css and Social Media Marketing
-                                </h4>
-                                <p class="project__description--para">
-                                    Enhanced online store functionalities through HTML,CSS and JavaScript implementations on the website, Transformed completely static HTML, CSS, Javascript.
-                                    Adhered to SEO best practices while designing sites.
-                                    Conceived and built optimized landing pages in HTML and CSS for integration and cross-browser
-                                    compatibility.
-                                    Coded websites using HTML, CSS, JavaScript, and jQuery languages.
-                                    Developed user-oriented visuals and features using front-end languages to increase site traffic.                                 
-                                </p>
-                            
-                            </div>
-                        </div>
-                    </li>
-
-                    
-                </ul>
-            </div>
-        </div>
-    </section>
+    
 
     <footer>
         <div class="container">

@@ -19,7 +19,7 @@ li{
  }
 
 section{
-    background-color: rgb(245, 245, 245);
+    background-color: rgb(255, 255, 255);
     transition: all 300ms ease;
 }
 
@@ -400,6 +400,87 @@ transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
     transition: all 300ms ease;
 }
 
+
+
+/*  */
+
+.stack__title{
+    text-align: center;
+    font-size: 48px;
+}
+
+.techStack__container {
+    margin: 60px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+
+.techStack__list {
+    margin-top: 96px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.newImages{
+    width: 100%;
+    max-width: 200px;
+    filter: invert(1);
+}
+
+
+.techStack {
+    width: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    position: relative;
+    z-index: 100;}
+    
+    .techStack__img--wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all 300ms ease;
+        padding: 25px 16px;
+    }
+
+
+
+
+        .tech__name{
+            position: absolute;
+            bottom: -10px;
+            transform: scale(0);
+            transition: all 300ms ease;
+            font-size: 30px;
+        }
+        
+        .techStack:hover .tech__name{
+            transform: scale(1);
+        }
+        
+        .techStack__img--wrapper:hover {
+            transform: scale(0.9);
+            filter: brightness(80%);
+        }
+        
+        .techStack__img--wrapper--img{
+            width: 100%;
+        }
+
+        
+
+
+
+/*  */
+
+
+
+
+
+
 .language__name{
     position: absolute;
     bottom: -10px;
@@ -524,6 +605,8 @@ transform: rotate(0);
  PROJECTS
 
 */
+
+
 
 .section__title{
     text-align: center;
@@ -748,4 +831,53 @@ SHAPES
     }
  }
  
+
+
+
+
+ /*  */
+.containers{
+    margin: 35px 0;
+}
+
+
+.hide{
+    display: none;
+    }
+
+
+
+#quote-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1100px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0 auto;
+}
+
+#quote-button {
+    font-size: 24px;
+    font-weight: 600;
+    background-color: white;
+    padding: 16px 24px;
+    width: 40%;
+    border: black solid;
+}
+
+#quote-button:hover {
+    background-color: #ffffff;
+}
+
+#quote-text{
+    font-size: 32px;
+    font-weight: 600;
+    color: var(--celestial-black);
+    text-align: center;
+    margin-bottom: 64px;
+    width: 70%;
+    text-align: center;
+}
 
